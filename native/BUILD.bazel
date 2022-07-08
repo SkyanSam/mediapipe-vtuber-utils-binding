@@ -3,4 +3,9 @@ cc_library(
   hdrs = ["native.h"],
   srcs = ["native.h", "native.cc"],
   visibility = ["//visibility:public"],
+  deps = [
+          #"//bazel-bin/mediapipe/calculators/core:pass_through_calculator",
+          #"//bazel-bin/mediapipe/framework:calculator_framework",
+          #"//bazel-bin/mediapipe/framework/port:parse_text_proto",
+      ],
 )
